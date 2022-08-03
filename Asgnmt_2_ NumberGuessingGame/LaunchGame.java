@@ -131,6 +131,43 @@ class Umpire
             System.out.println("GAME OVER !! \n  All prediction are  wrong ");
 
     }
+    
+    void displaySummary()
+    {
+    	// creating an array to store player values
+    	int[] accuracyOfPlayer= new int[4];
+    	
+    	// array index denotes the player number
+    	// finding the difference between guessed and predicted number , and storing to array )
+		accuracyOfPlayer[1] = howCloseToGuesserNum(numberFromPlayer1);  
+		accuracyOfPlayer[2] = howCloseToGuesserNum(numberFromPlayer2);
+		accuracyOfPlayer[3] = howCloseToGuesserNum(numberFromPlayer3);
+    	
+		System.out.println("\n==================Game Summary=============");
+		// printing the how close the prediction
+		for (int playerNum = 1; playerNum < accuracyOfPlayer.length; playerNum++)
+		{
+			if (accuracyOfPlayer[playerNum] == 0)
+			{
+				System.out.println(" The player" + playerNum + " guessed correcctly!!!!!");
+				continue;
+			}
+
+			System.out.println(" The player" + playerNum + " is " + accuracyOfPlayer[playerNum] + " digits away!!!");
+
+		}
+    	
+    			
+    }
+    
+    // to find closeness of the predicted number towards guessed number
+	int howCloseToGuesserNum(int num)
+	{
+		if (num > numberFromGuesser)
+			return num - numberFromGuesser;
+		else
+			return numberFromGuesser - num;
+	}
 }
 
 public class LaunchGame
@@ -140,5 +177,6 @@ public class LaunchGame
         Umpire umpr = new Umpire();
         umpr.collectNumers();
         umpr.compareAndFindWinner();
+        umpr.displaySummary();
     }
 }
