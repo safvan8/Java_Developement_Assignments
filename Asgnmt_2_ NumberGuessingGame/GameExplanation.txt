@@ -1,4 +1,6 @@
 
+[Dev.to](https://dev.to/safvan_p/number-guessing-game-49l4)
+
 Number Guessing Game
 ___________________
 
