@@ -1,11 +1,11 @@
 
-GUESSER GAME
+Number Guessing Game
 ___________________
 
 This is a sample game which I developed using Java to understand object-oriented programming thoroughly.
  
 Concept of Game:
- the game contains 5 players. Umpire, Guesser and three Players.
+ the number guessing game contains 5 players. Umpire, Guesser and three Players.
 The guesser guesses a number between 1 and 10 and tell it to the umpire secretly. And the remaining 3 players try to  predict the number guessed by   guesser. 
 The one who predicts the number guessed by the guesser correctly is the winner of the game.
  If  more than one Player predicts the number correctly, all of them are winners.
