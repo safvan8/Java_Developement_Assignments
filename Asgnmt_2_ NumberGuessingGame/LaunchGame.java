@@ -6,10 +6,10 @@ import java.util.Scanner;
  */
 class Guesser
 {
-    int numberGuessed;
-    int validNumber;
+	private int numberGuessed;
+	private int validNumber;
 
-    int guessTheNumber()
+	public int guessTheNumber()
     {
         Scanner scan = new Scanner(System.in);
         System.out.println("Guesser please Enter the Guessed number :");
@@ -38,14 +38,14 @@ class Guesser
 
 class Player
 {
-    int numberPredicted;
-    int validNumber;
+	private int numberPredicted;
+	private int validNumber;
 
     // to count the number of players
     static int playerCount = 0;
 
     // to restrict player input between 1 to 10
-    int predictTheNumber()
+    public int predictTheNumber()
     {
         playerCount++;
         Scanner scan = new Scanner(System.in);
@@ -75,13 +75,13 @@ class Player
 
 class Umpire
 {
-    int numberFromGuesser;
-    int numberFromPlayer1;
-    int numberFromPlayer2;
-    int numberFromPlayer3;
+	private int numberFromGuesser;
+	private int numberFromPlayer1;
+	private int numberFromPlayer2;
+	private int numberFromPlayer3;
 
     // method to collect number from the Guesser and Players
-    void collectNumers()
+	public void collectNumers()
     {
         // collecting number from the Guesser
         Guesser guessingMan = new Guesser();
@@ -101,7 +101,7 @@ class Umpire
     }
 
     // method for finding the winner by comparing predicted values
-    void compareAndFindWinner()
+    public void compareAndFindWinner()
     {
         System.out.println("\n!!!!!!!!!!!!!!! RESULT !!!!!!!!!!!!!!!\n");
 
@@ -136,7 +136,7 @@ class Umpire
 
     }
     
-    void displaySummary()
+    public void displaySummary()
     {
     	// creating an array to store player values
     	int[] accuracyOfPlayer= new int[4];
