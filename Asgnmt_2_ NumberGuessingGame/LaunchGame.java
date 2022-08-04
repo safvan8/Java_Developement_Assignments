@@ -1,5 +1,9 @@
 import java.util.Scanner;
-
+/**
+ * 
+ * @author safvan.p
+ *
+ */
 class Guesser
 {
     int numberGuessed;
