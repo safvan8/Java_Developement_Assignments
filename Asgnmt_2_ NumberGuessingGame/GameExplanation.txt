@@ -1,5 +1,4 @@
 
-[Dev.to](https://dev.to/safvan_p/number-guessing-game-49l4)
 
 Number Guessing Game
 ___________________
@@ -10,7 +9,8 @@ Concept of Game:
  the number guessing game contains 5 players. Umpire, Guesser and three Players.
 The guesser guesses a number between 1 and 10 and tell it to the umpire secretly. And the remaining 3 players try to  predict the number guessed by   guesser. 
 The one who predicts the number guessed by the guesser correctly is the winner of the game.
- If  more than one Player predicts the number correctly, all of them are winners.
+ If  more than one Player [https://dev.to/safvan_p/number-guessing-game-49l4
+ the number correctly, all of them are winners.
 
 Added features:
 ⇒ Restricted the all the players and guesser to guess  a number between 1 and 10. Even if they predict/guess a number out of this range, then the program will prompt to re-enter the input until they're choosing a value with in allowed range.
