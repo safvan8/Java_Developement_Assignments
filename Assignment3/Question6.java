@@ -1,4 +1,4 @@
-// WAP to sort a String Alphabetically.
+// write to sort a String Alphabetically.
 
 import java.sql.Array;
 import java.util.Arrays;
